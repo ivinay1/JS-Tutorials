@@ -1,0 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main
+{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px;
+
+}
+
+.div
+{
+    height: 10%;
+    width: 50%;
+    border: 2px solid black;
+    margin: 5px;
+}

@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.container img
+{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+#symbol
+{
+    position: absolute;
+    transform: translate(-50%,-50%)scale(0);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 45px;
+    opacity: 0;  /*initially invisible */
+    transition: opacity 0.5s ease, tranform 0.5s ease;
+}

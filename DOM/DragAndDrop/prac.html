@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM Practice </title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body
+        {
+            height: 100%;
+            width: 100%;
+        }
+
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+        }
+
+        .box
+        {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+
+        .box1
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="box">
+    Hello jii
+</div>
+<button>Clickme</button>
+
+<script>
+
+var btn = document.querySelector("button");
+var box = document.querySelector(".box");
+
+var box2 = document.createElement("div");
+box2.classList.add("box1");
+box2.innerHTML = '<p>Hamm aa gaye</p>';
+
+btn.addEventListener("click",function(e){
+
+console.log(box);
+
+    box.parentNode.appendChild(box2);
+
+})
+
+</script>
+
+</body>
+</html>
